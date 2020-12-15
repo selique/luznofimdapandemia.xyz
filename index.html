@@ -181,13 +181,12 @@
 			</div>
 		</div>
 		<script>
-				var elem = document.querySelector('.grid');
-				var msnry = new Masonry( elem, {
-					// options
-					columnWidth: '.grid-item',
-					itemSelector: '.grid-item',
-					percentPosition: true
-				});
+			$('.grid').masonry({
+				// options
+				columnWidth: '.grid-item',
+				itemSelector: '.grid-item',
+				percentPosition: true
+			});
 		</script>
 	</body>
 </html>
