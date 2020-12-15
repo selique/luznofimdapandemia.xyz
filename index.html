@@ -4,27 +4,130 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Luz no fim da pandemia</title>
-		<meta name="”description”" content="”Exposição" fotografica virtual“ />
+		<meta name="”description”" content="”Exposição" />
 		<link href="./assets/normalize.css" rel="stylesheet" type="text/css" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+
 		<style>
-			.main {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				flex: 1;
+			* { box-sizing: border-box; }
+
+			body {
+				font-family: sans-serif;
+				padding: 10% 5%;
 			}
-			img {
-				max-height: 100vh;
+
+			h1 {
+				text-align:center;
+			}
+
+			/* ---- grid ---- */
+			.grid {
+				max-width: 100vw;
+			}
+
+			/* clearfix */
+			.grid:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			/* ---- grid-item ---- */
+
+			.grid-item {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 100%;
+				justify-content: center;
+				margin: 2% 0;
+			}
+
+			.grid-item img{
+				display: flex;
+				flex-direction: column;
+				height: 50vh;
+				justify-content: center;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			.grid-item h2{
+				width: 100%;
+				text-align: center;
 			}
 		</style>
 	</head>
 
 	<body>
-		<div class="main">
-			<img
-				src="./assets/images/cartaz-1.jpg"
-				alt="Exposição virtual fotografica ligia chain e ariel gricio"
-			/>
+		<h1>Luz do Fim da Pândemia</h1>
+		<div class="grid">
+			<div class="grid-item">
+				<img src="./assets/images/1A.jpg">
+				<img src="./assets/images/1L.jpg">
+				<h2>A solidão do olhar por uma Janela.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/2A.jpg">
+				<img src="./assets/images/2L.jpg">
+				<h2>Olhos atentos a conexão.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/3A.jpg">
+				<img src="./assets/images/3L.jpg">
+				<h2>A música como método de alívio.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/4A.jpg">
+				<img src="./assets/images/4L.jpg">
+				<h2>Faça-se luz.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/5A.jpg">
+				<img src="./assets/images/5L.jpg">
+				<h2>Os compromissos e os descompromissos da vida cotidiana em meio ao isolamento.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/6A.jpg">
+				<img src="./assets/images/6L.jpg">
+				<h2>Ligação telefônica, pois nem tudo é visível aos olhos.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/7A.jpg">
+				<img src="./assets/images/7L.jpg">
+				<h2>O calor, banho e lavar a alma.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/8A.jpg">
+				<img src="./assets/images/8L.jpg">
+				<h2>O medo do que vive lá fora.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/9A.jpg">
+				<img src="./assets/images/9L.jpg">
+				<h2>A poesia como forma de fuga e a transcendência através da escrita.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/10A.jpg">
+				<img src="./assets/images/10L.jpg">
+				<h2>O choro, lamento da alma e o transbordar de emoções.</h2>
+			</div>
+			<div class="grid-item">
+				<img src="./assets/images/11A.jpg">
+				<img src="./assets/images/11L.jpg">
+				<h2>Do desejo do encontro ao medo da desconstrução da idealização.</h2>
+			</div>
 		</div>
+		<script>
+			var elem = document.querySelector('.grid');
+			var msnry = new Masonry( elem, {
+				// options
+				columnWidth: '.grid-item',
+				itemSelector: '.grid-item',
+				percentPosition: true
+			});
+		</script>
 	</body>
 </html>
