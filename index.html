@@ -9,6 +9,7 @@
 		<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 		<link rel="stylesheet" href="./assets/main.css">
 	<body>
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/I1-1GQAg54I?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture encrypted-media" allowfullscreen></iframe>
 		<div class="social">
 			<a href="https://www.instagram.com/gricioariel/">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063" style="width: 20px;">
@@ -85,24 +86,19 @@
 				<h2>Do desejo do encontro ao medo da desconstrução da idealização.</h2>
 			</div>
 		</div>
-		<iframe width="0" height="0" src="https://www.youtube.com/embed/I1-1GQAg54I?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture encrypted-media" allowfullscreen></iframe>
 		<script>
-			$(document).ready(function(){
-				 $('img').load(function(){
-					$('.grid').masonry({
-						// options
-						columnWidth: '.grid-item',
-						itemSelector: '.grid-item',
-						percentPosition: true
-					});
-				});
-				$('.grid').masonry({
-					// options
-					columnWidth: '.grid-item',
-					itemSelector: '.grid-item',
-					percentPosition: true
+			var $grid = $('.grid').masonry({
+				// options...
+				columnWidth: '.grid-item',
+				itemSelector: '.grid-item',
+				percentPosition: true
+			});
+			$( window ).on( "load", function() {
+				// layout Masonry after each image loads
+				$grid.imagesLoaded().progress( function() {
+					$grid.masonry('layout');
 				});
 			});
-		</script>
+			</script>
 	</body>
 </html>
