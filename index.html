@@ -7,7 +7,7 @@
 		<meta name="”description”" content="”Exposição" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-		<link rel="stylesheet" href="./assets/main.css">
+		<link rel="stylesheet" href="./assets/main_1.css">
 	<body>
 		<iframe width="0" height="0" src="https://www.youtube.com/embed/I1-1GQAg54I?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture encrypted-media" allowfullscreen></iframe>
 		<div class="social">
@@ -87,18 +87,12 @@
 			</div>
 		</div>
 		<script>
-			var $grid = $('.grid').masonry({
+			 $('.grid').masonry({
 				// options...
 				columnWidth: '.grid-item',
 				itemSelector: '.grid-item',
 				percentPosition: true
 			});
-			$( window ).on( "load", function() {
-				// layout Masonry after each image loads
-				$grid.imagesLoaded().progress( function() {
-					$grid.masonry('layout');
-				});
-			});
-			</script>
+		</script>
 	</body>
 </html>
