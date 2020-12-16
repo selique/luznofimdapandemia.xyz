@@ -5,94 +5,95 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Luz no fim da pandemia</title>
 		<meta name="”description”" content="”Exposição" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="./assets/main_1.css">
 	<body>
-		<iframe width="0" height="0" src="https://www.youtube.com/embed/I1-1GQAg54I?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture encrypted-media" allowfullscreen></iframe>
-		<div class="social">
-			<a href="https://www.instagram.com/gricioariel/">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063" style="width: 20px;">
-					<defs/>
-					<path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z"/>
-					<path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22-2.051 2.04-3.23 4.88-3.23 7.78 0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z"/>
-				</svg>
-				Ariel Gricio
-			</a>
-			<a href="https://www.instagram.com/ligiachaim/">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063" style="width: 20px;">
-					<defs/>
-					<path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z"/>
-					<path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22-2.051 2.04-3.23 4.88-3.23 7.78 0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z"/>
-				</svg>
-				Ligia Chaim
-			</a>
-		</div>
-		<h1>Luz do Fim da Pandemia</h1>
-		<div class="grid">
-			<div class="grid-item">
-				<img src="./assets/images/1A.jpg">
-				<img src="./assets/images/1L.jpg">
-				<h2>A solidão do olhar por uma Janela.</h2>
+		<div class="container">
+			<div class="row align-content-center">
+
+				<div class="social">
+					<a href="https://www.instagram.com/gricioariel/">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063" style="width: 20px;">
+							<defs/>
+							<path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z"/>
+							<path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22-2.051 2.04-3.23 4.88-3.23 7.78 0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z"/>
+						</svg>
+						Ariel Gricio
+					</a>
+					<a href="https://www.instagram.com/ligiachaim/">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063" style="width: 20px;">
+							<defs/>
+							<path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z"/>
+							<path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22-2.051 2.04-3.23 4.88-3.23 7.78 0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z"/>
+						</svg>
+						Ligia Chaim
+					</a>
+				</div>
 			</div>
-			<div class="grid-item">
-				<img src="./assets/images/2A.jpg">
-				<img src="./assets/images/2L.jpg">
-				<h2>Olhos atentos a conexão.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/3A.jpg">
-				<img src="./assets/images/3L.jpg">
-				<h2>A música como método de alívio.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/4A.jpg">
-				<img src="./assets/images/4L.jpg">
-				<h2>Faça-se luz.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/5A.jpg">
-				<img src="./assets/images/5L.jpg">
-				<h2>Os compromissos e os descompromissos da vida cotidiana em meio ao isolamento.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/6A.jpg">
-				<img src="./assets/images/6L.jpg">
-				<h2>Ligação telefônica, pois nem tudo é visível aos olhos.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/7A.jpg">
-				<img src="./assets/images/7L.jpg">
-				<h2>O calor, banho e lavar a alma.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/8A.jpg">
-				<img src="./assets/images/8L.jpg">
-				<h2>O medo do que vive lá fora.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/9A.jpg">
-				<img src="./assets/images/9L.jpg">
-				<h2>A poesia como forma de fuga e a transcendência através da escrita.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/10A.jpg">
-				<img src="./assets/images/10L.jpg">
-				<h2>O choro, lamento da alma e o transbordar de emoções.</h2>
-			</div>
-			<div class="grid-item">
-				<img src="./assets/images/11A.jpg">
-				<img src="./assets/images/11L.jpg">
-				<h2>Do desejo do encontro ao medo da desconstrução da idealização.</h2>
+			<div class="row">
+				<h1>Luz do Fim da Pandemia</h1>
 			</div>
 		</div>
-		<script>
-			 $('.grid').masonry({
-				// options...
-				columnWidth: '.grid-item',
-				itemSelector: '.grid-item',
-				percentPosition: true
-			});
-		</script>
+		<div class="container">
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/1A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/1L.jpg">
+				<h2 class="col-12">A solidão do olhar por uma Janela.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/2A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/2L.jpg">
+				<h2 class="col-12">Olhos atentos a conexão.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-4 col-xs-12" src="./assets/images/3A.jpg">
+				<img class="col-8 col-xs-12" src="./assets/images/3L.jpg">
+				<h2 class="col-12">A música como método de alívio.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-4 col-xs-12" src="./assets/images/4A.jpg">
+				<img class="col-8 col-xs-12" src="./assets/images/4L.jpg">
+				<h2 class="col-12">Faça-se luz.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-4 col-xs-12" src="./assets/images/5A.jpg">
+				<img class="col-8 col-xs-12" src="./assets/images/5L.jpg">
+				<h2 class="col-12">Os compromissos e os descompromissos da vida cotidiana em meio ao isolamento.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/6A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/6L.jpg">
+				<h2 class="col-12">Ligação telefônica, pois nem tudo é visível aos olhos.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/7A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/7L.jpg">
+				<h2 class="col-12">O calor, banho e lavar a alma.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/8A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/8L.jpg">
+				<h2 class="col-12">O medo do que vive lá fora.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-8 col-xs-12" src="./assets/images/9A.jpg">
+				<img class="col-4 col-xs-12" src="./assets/images/9L.jpg">
+				<h2 class="col-12">A poesia como forma de fuga e a transcendência através da escrita.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/10A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/10L.jpg">
+				<h2 class="col-12">O choro, lamento da alma e o transbordar de emoções.</h2>
+			</div>
+			<div class="row grid-item">
+				<img class="col-6 col-xs-12" src="./assets/images/11A.jpg">
+				<img class="col-6 col-xs-12" src="./assets/images/11L.jpg">
+				<h2 class="col-12">Do desejo do encontro ao medo da desconstrução da idealização.</h2>
+			</div>
+			<iframe width="0" height="0" src="https://www.youtube.com/embed/I1-1GQAg54I?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture encrypted-media" allowfullscreen></iframe>
+		</div>
 	</body>
 </html>
